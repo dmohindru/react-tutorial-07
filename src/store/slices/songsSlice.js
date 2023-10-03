@@ -18,7 +18,7 @@ const songsSlice = createSlice({
       // BY THIS REDUCER
       state.push(action.payload);
     },
-    // 'song' + '/' + 'addSong' = 'song/addSong'
+    // 'song' + '/' + 'removeSong' = 'song/removeSong'
     removeSong(state, action) {
       // action.payload === string, the song we want to remove
       const index = state.indexOf(action.payload);
